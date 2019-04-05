@@ -1,0 +1,721 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B30E878220DAC05900E7CAC9 /* timer_font.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B30E878120DAC05900E7CAC9 /* timer_font.ttf */; };
+		B30E878420DADD7200E7CAC9 /* merge_button.png in Resources */ = {isa = PBXBuildFile; fileRef = B30E878320DADD7200E7CAC9 /* merge_button.png */; };
+		B30FEA6920D8D14D00EB73DC /* ReadFont.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B30FEA6620D8D14D00EB73DC /* ReadFont.ttf */; };
+		B30FEA6A20D8D14D00EB73DC /* fail_sound.wav in Resources */ = {isa = PBXBuildFile; fileRef = B30FEA6720D8D14D00EB73DC /* fail_sound.wav */; };
+		B30FEA6B20D8D14D00EB73DC /* Dancing.otf in Resources */ = {isa = PBXBuildFile; fileRef = B30FEA6820D8D14D00EB73DC /* Dancing.otf */; };
+		B30FEA7B20D8D17800EB73DC /* ThemeSong.ogg in Resources */ = {isa = PBXBuildFile; fileRef = B30FEA7920D8D17800EB73DC /* ThemeSong.ogg */; };
+		B328039020C69144001EF2F2 /* liballegro_main.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038320C69144001EF2F2 /* liballegro_main.5.2.3.dylib */; };
+		B328039120C69144001EF2F2 /* liballegro_memfile.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038420C69144001EF2F2 /* liballegro_memfile.5.2.3.dylib */; };
+		B328039220C69144001EF2F2 /* liballegro_video.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038520C69144001EF2F2 /* liballegro_video.5.2.3.dylib */; };
+		B328039320C69144001EF2F2 /* liballegro_image.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038620C69144001EF2F2 /* liballegro_image.5.2.3.dylib */; };
+		B328039420C69144001EF2F2 /* liballegro_font.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038720C69144001EF2F2 /* liballegro_font.5.2.3.dylib */; };
+		B328039520C69144001EF2F2 /* liballegro_ttf.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038820C69144001EF2F2 /* liballegro_ttf.5.2.3.dylib */; };
+		B328039620C69144001EF2F2 /* liballegro_color.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038920C69144001EF2F2 /* liballegro_color.5.2.3.dylib */; };
+		B328039720C69144001EF2F2 /* liballegro_audio.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038A20C69144001EF2F2 /* liballegro_audio.5.2.3.dylib */; };
+		B328039820C69144001EF2F2 /* liballegro_physfs.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038B20C69144001EF2F2 /* liballegro_physfs.5.2.3.dylib */; };
+		B328039920C69144001EF2F2 /* liballegro_acodec.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038C20C69144001EF2F2 /* liballegro_acodec.5.2.3.dylib */; };
+		B328039A20C69144001EF2F2 /* liballegro_dialog.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038D20C69144001EF2F2 /* liballegro_dialog.5.2.3.dylib */; };
+		B328039B20C69144001EF2F2 /* liballegro_primitives.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038E20C69144001EF2F2 /* liballegro_primitives.5.2.3.dylib */; };
+		B328039C20C69144001EF2F2 /* liballegro.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B328038F20C69144001EF2F2 /* liballegro.5.2.3.dylib */; };
+		B32803AB20C69173001EF2F2 /* liballegro_main.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B328039E20C69173001EF2F2 /* liballegro_main.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803AC20C69173001EF2F2 /* liballegro_memfile.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B328039F20C69173001EF2F2 /* liballegro_memfile.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803AD20C69173001EF2F2 /* liballegro_video.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A020C69173001EF2F2 /* liballegro_video.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803AE20C69173001EF2F2 /* liballegro_image.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A120C69173001EF2F2 /* liballegro_image.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803AF20C69173001EF2F2 /* liballegro_font.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A220C69173001EF2F2 /* liballegro_font.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B020C69173001EF2F2 /* liballegro_ttf.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A320C69173001EF2F2 /* liballegro_ttf.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B120C69173001EF2F2 /* liballegro_color.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A420C69173001EF2F2 /* liballegro_color.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B220C69173001EF2F2 /* liballegro_audio.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A520C69173001EF2F2 /* liballegro_audio.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B320C69173001EF2F2 /* liballegro_physfs.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A620C69173001EF2F2 /* liballegro_physfs.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B420C69173001EF2F2 /* liballegro_acodec.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A720C69173001EF2F2 /* liballegro_acodec.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B520C69173001EF2F2 /* liballegro_dialog.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A820C69173001EF2F2 /* liballegro_dialog.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B620C69173001EF2F2 /* liballegro_primitives.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803A920C69173001EF2F2 /* liballegro_primitives.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B32803B720C69173001EF2F2 /* liballegro.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B32803AA20C69173001EF2F2 /* liballegro.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B35E0E0E20D8D54E004F20CC /* icon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35E0DE020D8D54B004F20CC /* icon.jpg */; };
+		B35E0E1C20D8D54E004F20CC /* background.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35E0DEE20D8D54D004F20CC /* background.jpg */; };
+		B35E0E2B20D9310E004F20CC /* sign.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B35E0E2920D9310E004F20CC /* sign.jpg */; };
+		B35E0E2C20D9310E004F20CC /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = B35E0E2A20D9310E004F20CC /* button.png */; };
+		B3914D1320DBB3C700E3EBE3 /* 1-6 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CE720DBB3C200E3EBE3 /* 1-6 text.png */; };
+		B3914D1420DBB3C700E3EBE3 /* 1-9 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CE820DBB3C200E3EBE3 /* 1-9 text.png */; };
+		B3914D1520DBB3C700E3EBE3 /* 1-11 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CE920DBB3C200E3EBE3 /* 1-11 text.png */; };
+		B3914D1620DBB3C700E3EBE3 /* 1-15 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CEA20DBB3C300E3EBE3 /* 1-15 pic.png */; };
+		B3914D1720DBB3C700E3EBE3 /* 1-9 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CEB20DBB3C300E3EBE3 /* 1-9 thmb.png */; };
+		B3914D1820DBB3C700E3EBE3 /* 1-8 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CEC20DBB3C300E3EBE3 /* 1-8 text.png */; };
+		B3914D1920DBB3C700E3EBE3 /* 1-9 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CED20DBB3C300E3EBE3 /* 1-9 pic.png */; };
+		B3914D1A20DBB3C700E3EBE3 /* 1-15 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CEE20DBB3C300E3EBE3 /* 1-15 text.png */; };
+		B3914D1B20DBB3C700E3EBE3 /* 1-6 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CEF20DBB3C300E3EBE3 /* 1-6 pic.png */; };
+		B3914D1C20DBB3C700E3EBE3 /* 1-4 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF020DBB3C300E3EBE3 /* 1-4 pic.png */; };
+		B3914D1D20DBB3C700E3EBE3 /* 1-4 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF120DBB3C300E3EBE3 /* 1-4 text.png */; };
+		B3914D1E20DBB3C700E3EBE3 /* 1-10 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF220DBB3C300E3EBE3 /* 1-10 thmb.png */; };
+		B3914D1F20DBB3C700E3EBE3 /* 1-14 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF320DBB3C300E3EBE3 /* 1-14 text.png */; };
+		B3914D2120DBB3C700E3EBE3 /* 1-11 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF520DBB3C400E3EBE3 /* 1-11 thmb.png */; };
+		B3914D2220DBB3C700E3EBE3 /* 1-14 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF620DBB3C400E3EBE3 /* 1-14 thmb.png */; };
+		B3914D2320DBB3C700E3EBE3 /* 1-8 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF720DBB3C400E3EBE3 /* 1-8 thmb.png */; };
+		B3914D2420DBB3C700E3EBE3 /* 1-13 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF820DBB3C400E3EBE3 /* 1-13 pic.png */; };
+		B3914D2520DBB3C700E3EBE3 /* 1-12 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CF920DBB3C400E3EBE3 /* 1-12 pic.png */; };
+		B3914D2620DBB3C700E3EBE3 /* 1-6 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CFA20DBB3C400E3EBE3 /* 1-6 thmb.png */; };
+		B3914D2720DBB3C700E3EBE3 /* 1-3 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CFB20DBB3C400E3EBE3 /* 1-3 thmb.png */; };
+		B3914D2820DBB3C700E3EBE3 /* 1-1 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CFC20DBB3C400E3EBE3 /* 1-1 pic.png */; };
+		B3914D2920DBB3C700E3EBE3 /* 1-10 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CFD20DBB3C500E3EBE3 /* 1-10 text.png */; };
+		B3914D2A20DBB3C700E3EBE3 /* 1-2 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CFE20DBB3C500E3EBE3 /* 1-2 text.png */; };
+		B3914D2B20DBB3C700E3EBE3 /* 1-7 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914CFF20DBB3C500E3EBE3 /* 1-7 pic.png */; };
+		B3914D2C20DBB3C700E3EBE3 /* 1-14 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0020DBB3C500E3EBE3 /* 1-14 pic.png */; };
+		B3914D2D20DBB3C700E3EBE3 /* 1-5 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0120DBB3C500E3EBE3 /* 1-5 text.png */; };
+		B3914D2E20DBB3C700E3EBE3 /* 1-2 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0220DBB3C500E3EBE3 /* 1-2 thmb.png */; };
+		B3914D2F20DBB3C700E3EBE3 /* 1-1 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0320DBB3C500E3EBE3 /* 1-1 text.png */; };
+		B3914D3020DBB3C700E3EBE3 /* 1-3 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0420DBB3C500E3EBE3 /* 1-3 pic.png */; };
+		B3914D3120DBB3C700E3EBE3 /* 1-8 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0520DBB3C500E3EBE3 /* 1-8 pic.png */; };
+		B3914D3220DBB3C700E3EBE3 /* 1-12 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0620DBB3C600E3EBE3 /* 1-12 text.png */; };
+		B3914D3320DBB3C700E3EBE3 /* 1-13 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0720DBB3C600E3EBE3 /* 1-13 text.png */; };
+		B3914D3420DBB3C700E3EBE3 /* 1-7 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0820DBB3C600E3EBE3 /* 1-7 text.png */; };
+		B3914D3520DBB3C700E3EBE3 /* 1-13 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0920DBB3C600E3EBE3 /* 1-13 thmb.png */; };
+		B3914D3620DBB3C700E3EBE3 /* 1-12 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0A20DBB3C600E3EBE3 /* 1-12 thmb.png */; };
+		B3914D3720DBB3C700E3EBE3 /* 1-2 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0B20DBB3C600E3EBE3 /* 1-2 pic.png */; };
+		B3914D3820DBB3C700E3EBE3 /* 1-5 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0C20DBB3C700E3EBE3 /* 1-5 thmb.png */; };
+		B3914D3920DBB3C700E3EBE3 /* 1-3 text.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0D20DBB3C700E3EBE3 /* 1-3 text.png */; };
+		B3914D3A20DBB3C700E3EBE3 /* 1-11 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0E20DBB3C700E3EBE3 /* 1-11 pic.png */; };
+		B3914D3B20DBB3C700E3EBE3 /* 1-1 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D0F20DBB3C700E3EBE3 /* 1-1 thmb.png */; };
+		B3914D3C20DBB3C700E3EBE3 /* 1-4 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D1020DBB3C700E3EBE3 /* 1-4 thmb.png */; };
+		B3914D3D20DBB3C700E3EBE3 /* 1-5 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D1120DBB3C700E3EBE3 /* 1-5 pic.png */; };
+		B3914D3E20DBB3C700E3EBE3 /* 1-7 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3914D1220DBB3C700E3EBE3 /* 1-7 thmb.png */; };
+		B3A9C92620DBC2F400201449 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9C91D20DBC2F300201449 /* GameWindow.cpp */; };
+		B3A9C92720DBC2F400201449 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9C91E20DBC2F300201449 /* Level.cpp */; };
+		B3A9C92820DBC2F400201449 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9C92120DBC2F300201449 /* Main.cpp */; };
+		B3A9C92920DBC2F400201449 /* Block.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9C92220DBC2F300201449 /* Block.cpp */; };
+		B3A9C92A20DBC2F400201449 /* global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9C92420DBC2F300201449 /* global.cpp */; };
+		B3A9C92C20DBC57600201449 /* 1-15 thmb.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C92B20DBC57600201449 /* 1-15 thmb.png */; };
+		B3A9C92E20DBE10900201449 /* 1-10 pic.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C92D20DBE10900201449 /* 1-10 pic.png */; };
+		B3A9C93120DBE75500201449 /* Timer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B3A9C93020DBE75500201449 /* Timer.cpp */; };
+		B3A9C93520DBED1800201449 /* gun_shot_sound.ogg in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C93420DBED1800201449 /* gun_shot_sound.ogg */; };
+		B3A9C93720DBF18700201449 /* real_end.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C93620DBF18600201449 /* real_end.jpg */; };
+		B3A9C95620DC173100201449 /* spark-2.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C94E20DC172F00201449 /* spark-2.png */; };
+		B3A9C95720DC173100201449 /* spark-6.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C94F20DC173000201449 /* spark-6.png */; };
+		B3A9C95820DC173100201449 /* spark-0.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C95020DC173000201449 /* spark-0.png */; };
+		B3A9C95920DC173100201449 /* spark-3.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C95120DC173000201449 /* spark-3.png */; };
+		B3A9C95A20DC173100201449 /* spark-7.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C95220DC173000201449 /* spark-7.png */; };
+		B3A9C95B20DC173100201449 /* spark-1.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C95320DC173000201449 /* spark-1.png */; };
+		B3A9C95C20DC173100201449 /* spark-4.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C95420DC173000201449 /* spark-4.png */; };
+		B3A9C95D20DC173100201449 /* spark-5.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C95520DC173000201449 /* spark-5.png */; };
+		B3A9C95F20DC3FFB00201449 /* prologue.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C95E20DC3FFB00201449 /* prologue.png */; };
+		B3A9C96120DC432C00201449 /* victory.png in Resources */ = {isa = PBXBuildFile; fileRef = B3A9C96020DC432C00201449 /* victory.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B328039D20C6915B001EF2F2 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B32803AB20C69173001EF2F2 /* liballegro_main.5.2.3.dylib in CopyFiles */,
+				B32803AC20C69173001EF2F2 /* liballegro_memfile.5.2.3.dylib in CopyFiles */,
+				B32803AD20C69173001EF2F2 /* liballegro_video.5.2.3.dylib in CopyFiles */,
+				B32803AE20C69173001EF2F2 /* liballegro_image.5.2.3.dylib in CopyFiles */,
+				B32803AF20C69173001EF2F2 /* liballegro_font.5.2.3.dylib in CopyFiles */,
+				B32803B020C69173001EF2F2 /* liballegro_ttf.5.2.3.dylib in CopyFiles */,
+				B32803B120C69173001EF2F2 /* liballegro_color.5.2.3.dylib in CopyFiles */,
+				B32803B220C69173001EF2F2 /* liballegro_audio.5.2.3.dylib in CopyFiles */,
+				B32803B320C69173001EF2F2 /* liballegro_physfs.5.2.3.dylib in CopyFiles */,
+				B32803B420C69173001EF2F2 /* liballegro_acodec.5.2.3.dylib in CopyFiles */,
+				B32803B520C69173001EF2F2 /* liballegro_dialog.5.2.3.dylib in CopyFiles */,
+				B32803B620C69173001EF2F2 /* liballegro_primitives.5.2.3.dylib in CopyFiles */,
+				B32803B720C69173001EF2F2 /* liballegro.5.2.3.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B30E878120DAC05900E7CAC9 /* timer_font.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = timer_font.ttf; path = Final_Project/timer_font.ttf; sourceTree = "<group>"; };
+		B30E878320DADD7200E7CAC9 /* merge_button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = merge_button.png; path = Final_Project/merge_button.png; sourceTree = "<group>"; };
+		B30FEA6620D8D14D00EB73DC /* ReadFont.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = ReadFont.ttf; path = Final_Project/ReadFont.ttf; sourceTree = "<group>"; };
+		B30FEA6720D8D14D00EB73DC /* fail_sound.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = fail_sound.wav; path = Final_Project/fail_sound.wav; sourceTree = "<group>"; };
+		B30FEA6820D8D14D00EB73DC /* Dancing.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dancing.otf; path = Final_Project/Dancing.otf; sourceTree = "<group>"; };
+		B30FEA7920D8D17800EB73DC /* ThemeSong.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = ThemeSong.ogg; path = Final_Project/ThemeSong.ogg; sourceTree = "<group>"; };
+		B328036E20C690D0001EF2F2 /* Final_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Final_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B328038320C69144001EF2F2 /* liballegro_main.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_main.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038420C69144001EF2F2 /* liballegro_memfile.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_memfile.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038520C69144001EF2F2 /* liballegro_video.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_video.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038620C69144001EF2F2 /* liballegro_image.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_image.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038720C69144001EF2F2 /* liballegro_font.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_font.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038820C69144001EF2F2 /* liballegro_ttf.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_ttf.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038920C69144001EF2F2 /* liballegro_color.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_color.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038A20C69144001EF2F2 /* liballegro_audio.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_audio.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038B20C69144001EF2F2 /* liballegro_physfs.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_physfs.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038C20C69144001EF2F2 /* liballegro_acodec.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_acodec.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038D20C69144001EF2F2 /* liballegro_dialog.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_dialog.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038E20C69144001EF2F2 /* liballegro_primitives.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_primitives.5.2.3.dylib; sourceTree = "<group>"; };
+		B328038F20C69144001EF2F2 /* liballegro.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro.5.2.3.dylib; sourceTree = "<group>"; };
+		B328039E20C69173001EF2F2 /* liballegro_main.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_main.5.2.3.dylib; sourceTree = "<group>"; };
+		B328039F20C69173001EF2F2 /* liballegro_memfile.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_memfile.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A020C69173001EF2F2 /* liballegro_video.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_video.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A120C69173001EF2F2 /* liballegro_image.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_image.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A220C69173001EF2F2 /* liballegro_font.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_font.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A320C69173001EF2F2 /* liballegro_ttf.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_ttf.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A420C69173001EF2F2 /* liballegro_color.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_color.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A520C69173001EF2F2 /* liballegro_audio.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_audio.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A620C69173001EF2F2 /* liballegro_physfs.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_physfs.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A720C69173001EF2F2 /* liballegro_acodec.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_acodec.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A820C69173001EF2F2 /* liballegro_dialog.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_dialog.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803A920C69173001EF2F2 /* liballegro_primitives.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_primitives.5.2.3.dylib; sourceTree = "<group>"; };
+		B32803AA20C69173001EF2F2 /* liballegro.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro.5.2.3.dylib; sourceTree = "<group>"; };
+		B35E0DE020D8D54B004F20CC /* icon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = icon.jpg; path = Final_Project/icon.jpg; sourceTree = "<group>"; };
+		B35E0DEE20D8D54D004F20CC /* background.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = background.jpg; path = Final_Project/background.jpg; sourceTree = "<group>"; };
+		B35E0E2920D9310E004F20CC /* sign.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = sign.jpg; path = Final_Project/sign.jpg; sourceTree = "<group>"; };
+		B35E0E2A20D9310E004F20CC /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = button.png; path = Final_Project/button.png; sourceTree = "<group>"; };
+		B3914CE720DBB3C200E3EBE3 /* 1-6 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-6 text.png"; path = "Final_Project/1-6 text.png"; sourceTree = "<group>"; };
+		B3914CE820DBB3C200E3EBE3 /* 1-9 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-9 text.png"; path = "Final_Project/1-9 text.png"; sourceTree = "<group>"; };
+		B3914CE920DBB3C200E3EBE3 /* 1-11 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-11 text.png"; path = "Final_Project/1-11 text.png"; sourceTree = "<group>"; };
+		B3914CEA20DBB3C300E3EBE3 /* 1-15 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-15 pic.png"; path = "Final_Project/1-15 pic.png"; sourceTree = "<group>"; };
+		B3914CEB20DBB3C300E3EBE3 /* 1-9 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-9 thmb.png"; path = "Final_Project/1-9 thmb.png"; sourceTree = "<group>"; };
+		B3914CEC20DBB3C300E3EBE3 /* 1-8 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-8 text.png"; path = "Final_Project/1-8 text.png"; sourceTree = "<group>"; };
+		B3914CED20DBB3C300E3EBE3 /* 1-9 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-9 pic.png"; path = "Final_Project/1-9 pic.png"; sourceTree = "<group>"; };
+		B3914CEE20DBB3C300E3EBE3 /* 1-15 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-15 text.png"; path = "Final_Project/1-15 text.png"; sourceTree = "<group>"; };
+		B3914CEF20DBB3C300E3EBE3 /* 1-6 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-6 pic.png"; path = "Final_Project/1-6 pic.png"; sourceTree = "<group>"; };
+		B3914CF020DBB3C300E3EBE3 /* 1-4 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-4 pic.png"; path = "Final_Project/1-4 pic.png"; sourceTree = "<group>"; };
+		B3914CF120DBB3C300E3EBE3 /* 1-4 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-4 text.png"; path = "Final_Project/1-4 text.png"; sourceTree = "<group>"; };
+		B3914CF220DBB3C300E3EBE3 /* 1-10 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-10 thmb.png"; path = "Final_Project/1-10 thmb.png"; sourceTree = "<group>"; };
+		B3914CF320DBB3C300E3EBE3 /* 1-14 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-14 text.png"; path = "Final_Project/1-14 text.png"; sourceTree = "<group>"; };
+		B3914CF520DBB3C400E3EBE3 /* 1-11 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-11 thmb.png"; path = "Final_Project/1-11 thmb.png"; sourceTree = "<group>"; };
+		B3914CF620DBB3C400E3EBE3 /* 1-14 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-14 thmb.png"; path = "Final_Project/1-14 thmb.png"; sourceTree = "<group>"; };
+		B3914CF720DBB3C400E3EBE3 /* 1-8 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-8 thmb.png"; path = "Final_Project/1-8 thmb.png"; sourceTree = "<group>"; };
+		B3914CF820DBB3C400E3EBE3 /* 1-13 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-13 pic.png"; path = "Final_Project/1-13 pic.png"; sourceTree = "<group>"; };
+		B3914CF920DBB3C400E3EBE3 /* 1-12 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-12 pic.png"; path = "Final_Project/1-12 pic.png"; sourceTree = "<group>"; };
+		B3914CFA20DBB3C400E3EBE3 /* 1-6 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-6 thmb.png"; path = "Final_Project/1-6 thmb.png"; sourceTree = "<group>"; };
+		B3914CFB20DBB3C400E3EBE3 /* 1-3 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-3 thmb.png"; path = "Final_Project/1-3 thmb.png"; sourceTree = "<group>"; };
+		B3914CFC20DBB3C400E3EBE3 /* 1-1 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-1 pic.png"; path = "Final_Project/1-1 pic.png"; sourceTree = "<group>"; };
+		B3914CFD20DBB3C500E3EBE3 /* 1-10 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-10 text.png"; path = "Final_Project/1-10 text.png"; sourceTree = "<group>"; };
+		B3914CFE20DBB3C500E3EBE3 /* 1-2 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-2 text.png"; path = "Final_Project/1-2 text.png"; sourceTree = "<group>"; };
+		B3914CFF20DBB3C500E3EBE3 /* 1-7 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-7 pic.png"; path = "Final_Project/1-7 pic.png"; sourceTree = "<group>"; };
+		B3914D0020DBB3C500E3EBE3 /* 1-14 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-14 pic.png"; path = "Final_Project/1-14 pic.png"; sourceTree = "<group>"; };
+		B3914D0120DBB3C500E3EBE3 /* 1-5 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-5 text.png"; path = "Final_Project/1-5 text.png"; sourceTree = "<group>"; };
+		B3914D0220DBB3C500E3EBE3 /* 1-2 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-2 thmb.png"; path = "Final_Project/1-2 thmb.png"; sourceTree = "<group>"; };
+		B3914D0320DBB3C500E3EBE3 /* 1-1 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-1 text.png"; path = "Final_Project/1-1 text.png"; sourceTree = "<group>"; };
+		B3914D0420DBB3C500E3EBE3 /* 1-3 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-3 pic.png"; path = "Final_Project/1-3 pic.png"; sourceTree = "<group>"; };
+		B3914D0520DBB3C500E3EBE3 /* 1-8 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-8 pic.png"; path = "Final_Project/1-8 pic.png"; sourceTree = "<group>"; };
+		B3914D0620DBB3C600E3EBE3 /* 1-12 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-12 text.png"; path = "Final_Project/1-12 text.png"; sourceTree = "<group>"; };
+		B3914D0720DBB3C600E3EBE3 /* 1-13 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-13 text.png"; path = "Final_Project/1-13 text.png"; sourceTree = "<group>"; };
+		B3914D0820DBB3C600E3EBE3 /* 1-7 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-7 text.png"; path = "Final_Project/1-7 text.png"; sourceTree = "<group>"; };
+		B3914D0920DBB3C600E3EBE3 /* 1-13 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-13 thmb.png"; path = "Final_Project/1-13 thmb.png"; sourceTree = "<group>"; };
+		B3914D0A20DBB3C600E3EBE3 /* 1-12 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-12 thmb.png"; path = "Final_Project/1-12 thmb.png"; sourceTree = "<group>"; };
+		B3914D0B20DBB3C600E3EBE3 /* 1-2 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-2 pic.png"; path = "Final_Project/1-2 pic.png"; sourceTree = "<group>"; };
+		B3914D0C20DBB3C700E3EBE3 /* 1-5 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-5 thmb.png"; path = "Final_Project/1-5 thmb.png"; sourceTree = "<group>"; };
+		B3914D0D20DBB3C700E3EBE3 /* 1-3 text.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-3 text.png"; path = "Final_Project/1-3 text.png"; sourceTree = "<group>"; };
+		B3914D0E20DBB3C700E3EBE3 /* 1-11 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-11 pic.png"; path = "Final_Project/1-11 pic.png"; sourceTree = "<group>"; };
+		B3914D0F20DBB3C700E3EBE3 /* 1-1 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-1 thmb.png"; path = "Final_Project/1-1 thmb.png"; sourceTree = "<group>"; };
+		B3914D1020DBB3C700E3EBE3 /* 1-4 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-4 thmb.png"; path = "Final_Project/1-4 thmb.png"; sourceTree = "<group>"; };
+		B3914D1120DBB3C700E3EBE3 /* 1-5 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-5 pic.png"; path = "Final_Project/1-5 pic.png"; sourceTree = "<group>"; };
+		B3914D1220DBB3C700E3EBE3 /* 1-7 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-7 thmb.png"; path = "Final_Project/1-7 thmb.png"; sourceTree = "<group>"; };
+		B3A9C91D20DBC2F300201449 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameWindow.cpp; path = Final_Project/ver1/GameWindow.cpp; sourceTree = "<group>"; };
+		B3A9C91E20DBC2F300201449 /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Level.cpp; path = Final_Project/ver1/Level.cpp; sourceTree = "<group>"; };
+		B3A9C91F20DBC2F300201449 /* Level.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Level.hpp; path = Final_Project/ver1/Level.hpp; sourceTree = "<group>"; };
+		B3A9C92020DBC2F300201449 /* Block.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Block.hpp; path = Final_Project/ver1/Block.hpp; sourceTree = "<group>"; };
+		B3A9C92120DBC2F300201449 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = Final_Project/ver1/Main.cpp; sourceTree = "<group>"; };
+		B3A9C92220DBC2F300201449 /* Block.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Block.cpp; path = Final_Project/ver1/Block.cpp; sourceTree = "<group>"; };
+		B3A9C92320DBC2F300201449 /* GameWindow.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = GameWindow.hpp; path = Final_Project/ver1/GameWindow.hpp; sourceTree = "<group>"; };
+		B3A9C92420DBC2F300201449 /* global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = global.cpp; path = Final_Project/ver1/global.cpp; sourceTree = "<group>"; };
+		B3A9C92520DBC2F300201449 /* global.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = global.hpp; path = Final_Project/ver1/global.hpp; sourceTree = "<group>"; };
+		B3A9C92B20DBC57600201449 /* 1-15 thmb.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-15 thmb.png"; path = "Final_Project/1-15 thmb.png"; sourceTree = "<group>"; };
+		B3A9C92D20DBE10900201449 /* 1-10 pic.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "1-10 pic.png"; path = "Final_Project/1-10 pic.png"; sourceTree = "<group>"; };
+		B3A9C92F20DBE75400201449 /* Timer.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Timer.hpp; path = Final_Project/ver3/Timer.hpp; sourceTree = "<group>"; };
+		B3A9C93020DBE75500201449 /* Timer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Timer.cpp; path = Final_Project/ver3/Timer.cpp; sourceTree = "<group>"; };
+		B3A9C93420DBED1800201449 /* gun_shot_sound.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = gun_shot_sound.ogg; path = Final_Project/gun_shot_sound.ogg; sourceTree = "<group>"; };
+		B3A9C93620DBF18600201449 /* real_end.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = real_end.jpg; path = Final_Project/real_end.jpg; sourceTree = "<group>"; };
+		B3A9C94E20DC172F00201449 /* spark-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-2.png"; path = "Final_Project/spark-2.png"; sourceTree = "<group>"; };
+		B3A9C94F20DC173000201449 /* spark-6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-6.png"; path = "Final_Project/spark-6.png"; sourceTree = "<group>"; };
+		B3A9C95020DC173000201449 /* spark-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-0.png"; path = "Final_Project/spark-0.png"; sourceTree = "<group>"; };
+		B3A9C95120DC173000201449 /* spark-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-3.png"; path = "Final_Project/spark-3.png"; sourceTree = "<group>"; };
+		B3A9C95220DC173000201449 /* spark-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-7.png"; path = "Final_Project/spark-7.png"; sourceTree = "<group>"; };
+		B3A9C95320DC173000201449 /* spark-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-1.png"; path = "Final_Project/spark-1.png"; sourceTree = "<group>"; };
+		B3A9C95420DC173000201449 /* spark-4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-4.png"; path = "Final_Project/spark-4.png"; sourceTree = "<group>"; };
+		B3A9C95520DC173000201449 /* spark-5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "spark-5.png"; path = "Final_Project/spark-5.png"; sourceTree = "<group>"; };
+		B3A9C95E20DC3FFB00201449 /* prologue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = prologue.png; path = Final_Project/prologue.png; sourceTree = "<group>"; };
+		B3A9C96020DC432C00201449 /* victory.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = victory.png; path = Final_Project/victory.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B328036B20C690D0001EF2F2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B328039020C69144001EF2F2 /* liballegro_main.5.2.3.dylib in Frameworks */,
+				B328039120C69144001EF2F2 /* liballegro_memfile.5.2.3.dylib in Frameworks */,
+				B328039220C69144001EF2F2 /* liballegro_video.5.2.3.dylib in Frameworks */,
+				B328039320C69144001EF2F2 /* liballegro_image.5.2.3.dylib in Frameworks */,
+				B328039420C69144001EF2F2 /* liballegro_font.5.2.3.dylib in Frameworks */,
+				B328039520C69144001EF2F2 /* liballegro_ttf.5.2.3.dylib in Frameworks */,
+				B328039620C69144001EF2F2 /* liballegro_color.5.2.3.dylib in Frameworks */,
+				B328039720C69144001EF2F2 /* liballegro_audio.5.2.3.dylib in Frameworks */,
+				B328039820C69144001EF2F2 /* liballegro_physfs.5.2.3.dylib in Frameworks */,
+				B328039920C69144001EF2F2 /* liballegro_acodec.5.2.3.dylib in Frameworks */,
+				B328039A20C69144001EF2F2 /* liballegro_dialog.5.2.3.dylib in Frameworks */,
+				B328039B20C69144001EF2F2 /* liballegro_primitives.5.2.3.dylib in Frameworks */,
+				B328039C20C69144001EF2F2 /* liballegro.5.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B328036520C690D0001EF2F2 = {
+			isa = PBXGroup;
+			children = (
+				B32803A720C69173001EF2F2 /* liballegro_acodec.5.2.3.dylib */,
+				B32803A520C69173001EF2F2 /* liballegro_audio.5.2.3.dylib */,
+				B32803A420C69173001EF2F2 /* liballegro_color.5.2.3.dylib */,
+				B32803A820C69173001EF2F2 /* liballegro_dialog.5.2.3.dylib */,
+				B32803A220C69173001EF2F2 /* liballegro_font.5.2.3.dylib */,
+				B32803A120C69173001EF2F2 /* liballegro_image.5.2.3.dylib */,
+				B328039E20C69173001EF2F2 /* liballegro_main.5.2.3.dylib */,
+				B328039F20C69173001EF2F2 /* liballegro_memfile.5.2.3.dylib */,
+				B32803A620C69173001EF2F2 /* liballegro_physfs.5.2.3.dylib */,
+				B32803A920C69173001EF2F2 /* liballegro_primitives.5.2.3.dylib */,
+				B32803A320C69173001EF2F2 /* liballegro_ttf.5.2.3.dylib */,
+				B32803A020C69173001EF2F2 /* liballegro_video.5.2.3.dylib */,
+				B32803AA20C69173001EF2F2 /* liballegro.5.2.3.dylib */,
+				B328036F20C690D0001EF2F2 /* Products */,
+				B3A9C96020DC432C00201449 /* victory.png */,
+				B3A9C95020DC173000201449 /* spark-0.png */,
+				B3A9C95320DC173000201449 /* spark-1.png */,
+				B3A9C94E20DC172F00201449 /* spark-2.png */,
+				B3A9C95120DC173000201449 /* spark-3.png */,
+				B3A9C95420DC173000201449 /* spark-4.png */,
+				B3A9C95520DC173000201449 /* spark-5.png */,
+				B3A9C94F20DC173000201449 /* spark-6.png */,
+				B3A9C95220DC173000201449 /* spark-7.png */,
+				B3A9C93620DBF18600201449 /* real_end.jpg */,
+				B3A9C93420DBED1800201449 /* gun_shot_sound.ogg */,
+				B3A9C93020DBE75500201449 /* Timer.cpp */,
+				B3A9C92F20DBE75400201449 /* Timer.hpp */,
+				B3A9C92220DBC2F300201449 /* Block.cpp */,
+				B3A9C92020DBC2F300201449 /* Block.hpp */,
+				B3A9C91D20DBC2F300201449 /* GameWindow.cpp */,
+				B3A9C95E20DC3FFB00201449 /* prologue.png */,
+				B3A9C92320DBC2F300201449 /* GameWindow.hpp */,
+				B3A9C92420DBC2F300201449 /* global.cpp */,
+				B3A9C92520DBC2F300201449 /* global.hpp */,
+				B3A9C91E20DBC2F300201449 /* Level.cpp */,
+				B3A9C91F20DBC2F300201449 /* Level.hpp */,
+				B3A9C92120DBC2F300201449 /* Main.cpp */,
+				B30E878120DAC05900E7CAC9 /* timer_font.ttf */,
+				B30FEA6620D8D14D00EB73DC /* ReadFont.ttf */,
+				B30FEA6820D8D14D00EB73DC /* Dancing.otf */,
+				B30FEA7920D8D17800EB73DC /* ThemeSong.ogg */,
+				B30FEA6720D8D14D00EB73DC /* fail_sound.wav */,
+				B3914CFC20DBB3C400E3EBE3 /* 1-1 pic.png */,
+				B3914D0320DBB3C500E3EBE3 /* 1-1 text.png */,
+				B3914D0F20DBB3C700E3EBE3 /* 1-1 thmb.png */,
+				B3914D0B20DBB3C600E3EBE3 /* 1-2 pic.png */,
+				B3914CFE20DBB3C500E3EBE3 /* 1-2 text.png */,
+				B3914D0220DBB3C500E3EBE3 /* 1-2 thmb.png */,
+				B3914D0420DBB3C500E3EBE3 /* 1-3 pic.png */,
+				B3914D0D20DBB3C700E3EBE3 /* 1-3 text.png */,
+				B3914CFB20DBB3C400E3EBE3 /* 1-3 thmb.png */,
+				B3914CF020DBB3C300E3EBE3 /* 1-4 pic.png */,
+				B3914CF120DBB3C300E3EBE3 /* 1-4 text.png */,
+				B3914D1020DBB3C700E3EBE3 /* 1-4 thmb.png */,
+				B3914D1120DBB3C700E3EBE3 /* 1-5 pic.png */,
+				B3914D0120DBB3C500E3EBE3 /* 1-5 text.png */,
+				B3914D0C20DBB3C700E3EBE3 /* 1-5 thmb.png */,
+				B3914CEF20DBB3C300E3EBE3 /* 1-6 pic.png */,
+				B3914CE720DBB3C200E3EBE3 /* 1-6 text.png */,
+				B3914CFA20DBB3C400E3EBE3 /* 1-6 thmb.png */,
+				B3914CFF20DBB3C500E3EBE3 /* 1-7 pic.png */,
+				B3914D0820DBB3C600E3EBE3 /* 1-7 text.png */,
+				B3914D1220DBB3C700E3EBE3 /* 1-7 thmb.png */,
+				B3914D0520DBB3C500E3EBE3 /* 1-8 pic.png */,
+				B3914CEC20DBB3C300E3EBE3 /* 1-8 text.png */,
+				B3914CF720DBB3C400E3EBE3 /* 1-8 thmb.png */,
+				B3914CED20DBB3C300E3EBE3 /* 1-9 pic.png */,
+				B3914CE820DBB3C200E3EBE3 /* 1-9 text.png */,
+				B3914CEB20DBB3C300E3EBE3 /* 1-9 thmb.png */,
+				B3A9C92D20DBE10900201449 /* 1-10 pic.png */,
+				B3914CFD20DBB3C500E3EBE3 /* 1-10 text.png */,
+				B3914CF220DBB3C300E3EBE3 /* 1-10 thmb.png */,
+				B3914D0E20DBB3C700E3EBE3 /* 1-11 pic.png */,
+				B3914CE920DBB3C200E3EBE3 /* 1-11 text.png */,
+				B3914CF520DBB3C400E3EBE3 /* 1-11 thmb.png */,
+				B3914CF920DBB3C400E3EBE3 /* 1-12 pic.png */,
+				B3914D0620DBB3C600E3EBE3 /* 1-12 text.png */,
+				B3914D0A20DBB3C600E3EBE3 /* 1-12 thmb.png */,
+				B3914CF820DBB3C400E3EBE3 /* 1-13 pic.png */,
+				B3914D0720DBB3C600E3EBE3 /* 1-13 text.png */,
+				B3914D0920DBB3C600E3EBE3 /* 1-13 thmb.png */,
+				B3914D0020DBB3C500E3EBE3 /* 1-14 pic.png */,
+				B3914CF320DBB3C300E3EBE3 /* 1-14 text.png */,
+				B3914CF620DBB3C400E3EBE3 /* 1-14 thmb.png */,
+				B3914CEA20DBB3C300E3EBE3 /* 1-15 pic.png */,
+				B3914CEE20DBB3C300E3EBE3 /* 1-15 text.png */,
+				B3A9C92B20DBC57600201449 /* 1-15 thmb.png */,
+				B35E0DEE20D8D54D004F20CC /* background.jpg */,
+				B35E0DE020D8D54B004F20CC /* icon.jpg */,
+				B35E0E2A20D9310E004F20CC /* button.png */,
+				B30E878320DADD7200E7CAC9 /* merge_button.png */,
+				B35E0E2920D9310E004F20CC /* sign.jpg */,
+				B328038220C69144001EF2F2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B328036F20C690D0001EF2F2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B328036E20C690D0001EF2F2 /* Final_Project.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B328038220C69144001EF2F2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B328038C20C69144001EF2F2 /* liballegro_acodec.5.2.3.dylib */,
+				B328038A20C69144001EF2F2 /* liballegro_audio.5.2.3.dylib */,
+				B328038920C69144001EF2F2 /* liballegro_color.5.2.3.dylib */,
+				B328038D20C69144001EF2F2 /* liballegro_dialog.5.2.3.dylib */,
+				B328038720C69144001EF2F2 /* liballegro_font.5.2.3.dylib */,
+				B328038620C69144001EF2F2 /* liballegro_image.5.2.3.dylib */,
+				B328038320C69144001EF2F2 /* liballegro_main.5.2.3.dylib */,
+				B328038420C69144001EF2F2 /* liballegro_memfile.5.2.3.dylib */,
+				B328038B20C69144001EF2F2 /* liballegro_physfs.5.2.3.dylib */,
+				B328038E20C69144001EF2F2 /* liballegro_primitives.5.2.3.dylib */,
+				B328038820C69144001EF2F2 /* liballegro_ttf.5.2.3.dylib */,
+				B328038520C69144001EF2F2 /* liballegro_video.5.2.3.dylib */,
+				B328038F20C69144001EF2F2 /* liballegro.5.2.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B328036D20C690D0001EF2F2 /* Final_Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B328037F20C690D1001EF2F2 /* Build configuration list for PBXNativeTarget "Final_Project" */;
+			buildPhases = (
+				B328036A20C690D0001EF2F2 /* Sources */,
+				B328036B20C690D0001EF2F2 /* Frameworks */,
+				B328036C20C690D0001EF2F2 /* Resources */,
+				B328039D20C6915B001EF2F2 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Final_Project;
+			productName = Final_Project;
+			productReference = B328036E20C690D0001EF2F2 /* Final_Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B328036620C690D0001EF2F2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "K-Machina";
+				TargetAttributes = {
+					B328036D20C690D0001EF2F2 = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = B328036920C690D0001EF2F2 /* Build configuration list for PBXProject "Final_Project" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B328036520C690D0001EF2F2;
+			productRefGroup = B328036F20C690D0001EF2F2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B328036D20C690D0001EF2F2 /* Final_Project */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B328036C20C690D0001EF2F2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B30FEA6B20D8D14D00EB73DC /* Dancing.otf in Resources */,
+				B3A9C95C20DC173100201449 /* spark-4.png in Resources */,
+				B3914D3520DBB3C700E3EBE3 /* 1-13 thmb.png in Resources */,
+				B3914D2920DBB3C700E3EBE3 /* 1-10 text.png in Resources */,
+				B3914D2120DBB3C700E3EBE3 /* 1-11 thmb.png in Resources */,
+				B3A9C92E20DBE10900201449 /* 1-10 pic.png in Resources */,
+				B3914D2220DBB3C700E3EBE3 /* 1-14 thmb.png in Resources */,
+				B30FEA6920D8D14D00EB73DC /* ReadFont.ttf in Resources */,
+				B3914D2720DBB3C700E3EBE3 /* 1-3 thmb.png in Resources */,
+				B3914D2320DBB3C700E3EBE3 /* 1-8 thmb.png in Resources */,
+				B3914D3D20DBB3C700E3EBE3 /* 1-5 pic.png in Resources */,
+				B3914D1F20DBB3C700E3EBE3 /* 1-14 text.png in Resources */,
+				B30E878220DAC05900E7CAC9 /* timer_font.ttf in Resources */,
+				B3A9C93520DBED1800201449 /* gun_shot_sound.ogg in Resources */,
+				B30FEA7B20D8D17800EB73DC /* ThemeSong.ogg in Resources */,
+				B3914D2D20DBB3C700E3EBE3 /* 1-5 text.png in Resources */,
+				B3914D2820DBB3C700E3EBE3 /* 1-1 pic.png in Resources */,
+				B3914D3B20DBB3C700E3EBE3 /* 1-1 thmb.png in Resources */,
+				B3914D3A20DBB3C700E3EBE3 /* 1-11 pic.png in Resources */,
+				B3914D3920DBB3C700E3EBE3 /* 1-3 text.png in Resources */,
+				B3914D3820DBB3C700E3EBE3 /* 1-5 thmb.png in Resources */,
+				B3914D2620DBB3C700E3EBE3 /* 1-6 thmb.png in Resources */,
+				B3A9C95F20DC3FFB00201449 /* prologue.png in Resources */,
+				B3914D1C20DBB3C700E3EBE3 /* 1-4 pic.png in Resources */,
+				B35E0E2B20D9310E004F20CC /* sign.jpg in Resources */,
+				B3914D2C20DBB3C700E3EBE3 /* 1-14 pic.png in Resources */,
+				B3914D1920DBB3C700E3EBE3 /* 1-9 pic.png in Resources */,
+				B3A9C95B20DC173100201449 /* spark-1.png in Resources */,
+				B3A9C95820DC173100201449 /* spark-0.png in Resources */,
+				B3914D3420DBB3C700E3EBE3 /* 1-7 text.png in Resources */,
+				B3914D3320DBB3C700E3EBE3 /* 1-13 text.png in Resources */,
+				B3914D2520DBB3C700E3EBE3 /* 1-12 pic.png in Resources */,
+				B3914D2B20DBB3C700E3EBE3 /* 1-7 pic.png in Resources */,
+				B3914D3620DBB3C700E3EBE3 /* 1-12 thmb.png in Resources */,
+				B3914D1620DBB3C700E3EBE3 /* 1-15 pic.png in Resources */,
+				B3A9C95620DC173100201449 /* spark-2.png in Resources */,
+				B3914D3220DBB3C700E3EBE3 /* 1-12 text.png in Resources */,
+				B30E878420DADD7200E7CAC9 /* merge_button.png in Resources */,
+				B3A9C93720DBF18700201449 /* real_end.jpg in Resources */,
+				B3914D1D20DBB3C700E3EBE3 /* 1-4 text.png in Resources */,
+				B3914D1520DBB3C700E3EBE3 /* 1-11 text.png in Resources */,
+				B3914D3720DBB3C700E3EBE3 /* 1-2 pic.png in Resources */,
+				B3914D1720DBB3C700E3EBE3 /* 1-9 thmb.png in Resources */,
+				B35E0E1C20D8D54E004F20CC /* background.jpg in Resources */,
+				B3914D1A20DBB3C700E3EBE3 /* 1-15 text.png in Resources */,
+				B3914D3C20DBB3C700E3EBE3 /* 1-4 thmb.png in Resources */,
+				B3914D1820DBB3C700E3EBE3 /* 1-8 text.png in Resources */,
+				B3A9C96120DC432C00201449 /* victory.png in Resources */,
+				B3A9C95A20DC173100201449 /* spark-7.png in Resources */,
+				B3914D3020DBB3C700E3EBE3 /* 1-3 pic.png in Resources */,
+				B3914D2A20DBB3C700E3EBE3 /* 1-2 text.png in Resources */,
+				B3914D2E20DBB3C700E3EBE3 /* 1-2 thmb.png in Resources */,
+				B35E0E2C20D9310E004F20CC /* button.png in Resources */,
+				B30FEA6A20D8D14D00EB73DC /* fail_sound.wav in Resources */,
+				B3914D2420DBB3C700E3EBE3 /* 1-13 pic.png in Resources */,
+				B3A9C92C20DBC57600201449 /* 1-15 thmb.png in Resources */,
+				B35E0E0E20D8D54E004F20CC /* icon.jpg in Resources */,
+				B3914D2F20DBB3C700E3EBE3 /* 1-1 text.png in Resources */,
+				B3914D1E20DBB3C700E3EBE3 /* 1-10 thmb.png in Resources */,
+				B3914D1B20DBB3C700E3EBE3 /* 1-6 pic.png in Resources */,
+				B3914D3120DBB3C700E3EBE3 /* 1-8 pic.png in Resources */,
+				B3A9C95920DC173100201449 /* spark-3.png in Resources */,
+				B3A9C95D20DC173100201449 /* spark-5.png in Resources */,
+				B3914D3E20DBB3C700E3EBE3 /* 1-7 thmb.png in Resources */,
+				B3A9C95720DC173100201449 /* spark-6.png in Resources */,
+				B3914D1320DBB3C700E3EBE3 /* 1-6 text.png in Resources */,
+				B3914D1420DBB3C700E3EBE3 /* 1-9 text.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B328036A20C690D0001EF2F2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3A9C92820DBC2F400201449 /* Main.cpp in Sources */,
+				B3A9C92920DBC2F400201449 /* Block.cpp in Sources */,
+				B3A9C92A20DBC2F400201449 /* global.cpp in Sources */,
+				B3A9C93120DBE75500201449 /* Timer.cpp in Sources */,
+				B3A9C92720DBC2F400201449 /* Level.cpp in Sources */,
+				B3A9C92620DBC2F400201449 /* GameWindow.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		B328037D20C690D1001EF2F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B328037E20C690D1001EF2F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B328038020C690D1001EF2F2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_ENTITLEMENTS = Final_Project/Final_Project.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = Final_Project/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/**",
+					/usr/local/Cellar/allegro/5.2.3.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kimble-Chen.Final-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		B328038120C690D1001EF2F2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CODE_SIGN_ENTITLEMENTS = Final_Project/Final_Project.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = Final_Project/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/**",
+					/usr/local/Cellar/allegro/5.2.3.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Kimble-Chen.Final-Project";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B328036920C690D0001EF2F2 /* Build configuration list for PBXProject "Final_Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B328037D20C690D1001EF2F2 /* Debug */,
+				B328037E20C690D1001EF2F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B328037F20C690D1001EF2F2 /* Build configuration list for PBXNativeTarget "Final_Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B328038020C690D1001EF2F2 /* Debug */,
+				B328038120C690D1001EF2F2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B328036620C690D0001EF2F2 /* Project object */;
+}
