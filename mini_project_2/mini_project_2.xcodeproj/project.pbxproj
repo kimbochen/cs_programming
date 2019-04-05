@@ -1,0 +1,689 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B392ABEF20C39BD50012E556 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B392ABEE20C39BD50012E556 /* Assets.xcassets */; };
+		B392ABF220C39BD60012E556 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = B392ABF020C39BD60012E556 /* MainMenu.xib */; };
+		B392AC0A20C39D500012E556 /* liballegro_main.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392ABFD20C39D4F0012E556 /* liballegro_main.5.2.3.dylib */; };
+		B392AC0B20C39D500012E556 /* liballegro_memfile.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392ABFE20C39D4F0012E556 /* liballegro_memfile.5.2.3.dylib */; };
+		B392AC0C20C39D500012E556 /* liballegro_video.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392ABFF20C39D4F0012E556 /* liballegro_video.5.2.3.dylib */; };
+		B392AC0D20C39D500012E556 /* liballegro_image.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0020C39D4F0012E556 /* liballegro_image.5.2.3.dylib */; };
+		B392AC0E20C39D500012E556 /* liballegro_font.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0120C39D500012E556 /* liballegro_font.5.2.3.dylib */; };
+		B392AC0F20C39D500012E556 /* liballegro_ttf.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0220C39D500012E556 /* liballegro_ttf.5.2.3.dylib */; };
+		B392AC1020C39D500012E556 /* liballegro_color.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0320C39D500012E556 /* liballegro_color.5.2.3.dylib */; };
+		B392AC1120C39D500012E556 /* liballegro_audio.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0420C39D500012E556 /* liballegro_audio.5.2.3.dylib */; };
+		B392AC1220C39D500012E556 /* liballegro_physfs.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0520C39D500012E556 /* liballegro_physfs.5.2.3.dylib */; };
+		B392AC1320C39D500012E556 /* liballegro_acodec.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0620C39D500012E556 /* liballegro_acodec.5.2.3.dylib */; };
+		B392AC1420C39D500012E556 /* liballegro_dialog.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0720C39D500012E556 /* liballegro_dialog.5.2.3.dylib */; };
+		B392AC1520C39D500012E556 /* liballegro_primitives.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0820C39D500012E556 /* liballegro_primitives.5.2.3.dylib */; };
+		B392AC1620C39D500012E556 /* liballegro.5.2.3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B392AC0920C39D500012E556 /* liballegro.5.2.3.dylib */; };
+		B392AC2520C39D750012E556 /* liballegro_main.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1820C39D730012E556 /* liballegro_main.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2620C39D750012E556 /* liballegro_memfile.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1920C39D730012E556 /* liballegro_memfile.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2720C39D750012E556 /* liballegro_video.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1A20C39D730012E556 /* liballegro_video.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2820C39D750012E556 /* liballegro_image.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1B20C39D740012E556 /* liballegro_image.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2920C39D750012E556 /* liballegro_font.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1C20C39D740012E556 /* liballegro_font.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2A20C39D750012E556 /* liballegro_ttf.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1D20C39D740012E556 /* liballegro_ttf.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2B20C39D750012E556 /* liballegro_color.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1E20C39D740012E556 /* liballegro_color.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2C20C39D750012E556 /* liballegro_audio.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC1F20C39D740012E556 /* liballegro_audio.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2D20C39D750012E556 /* liballegro_physfs.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC2020C39D740012E556 /* liballegro_physfs.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2E20C39D750012E556 /* liballegro_acodec.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC2120C39D740012E556 /* liballegro_acodec.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC2F20C39D750012E556 /* liballegro_dialog.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC2220C39D740012E556 /* liballegro_dialog.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC3020C39D750012E556 /* liballegro_primitives.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC2320C39D740012E556 /* liballegro_primitives.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC3120C39D750012E556 /* liballegro.5.2.3.dylib in CopyFiles */ = {isa = PBXBuildFile; fileRef = B392AC2420C39D750012E556 /* liballegro.5.2.3.dylib */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		B392AC7820C39E190012E556 /* Circle.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC3220C39E120012E556 /* Circle.cpp */; };
+		B392AC7920C39E190012E556 /* LEVEL1.txt in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3320C39E120012E556 /* LEVEL1.txt */; };
+		B392AC7A20C39E190012E556 /* Monster.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC3420C39E120012E556 /* Monster.cpp */; };
+		B392AC7B20C39E190012E556 /* SelectScene in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3520C39E130012E556 /* SelectScene */; };
+		B392AC7C20C39E190012E556 /* TowerGame.depend in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3620C39E130012E556 /* TowerGame.depend */; };
+		B392AC7D20C39E190012E556 /* Dancing.otf in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3720C39E130012E556 /* Dancing.otf */; };
+		B392AC7E20C39E190012E556 /* map.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3820C39E130012E556 /* map.jpg */; };
+		B392AC7F20C39E190012E556 /* WolfKnight in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3920C39E130012E556 /* WolfKnight */; };
+		B392AC8020C39E190012E556 /* RedDragon in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3B20C39E130012E556 /* RedDragon */; };
+		B392AC8120C39E190012E556 /* LEVEL2.txt in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3C20C39E130012E556 /* LEVEL2.txt */; };
+		B392AC8220C39E190012E556 /* Eagle in Resources */ = {isa = PBXBuildFile; fileRef = B392AC3E20C39E140012E556 /* Eagle */; };
+		B392AC8320C39E190012E556 /* pirulen.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4020C39E140012E556 /* pirulen.ttf */; };
+		B392AC8420C39E190012E556 /* Attack.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC4220C39E140012E556 /* Attack.cpp */; };
+		B392AC8520C39E190012E556 /* level_clear.wav in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4520C39E140012E556 /* level_clear.wav */; };
+		B392AC8620C39E190012E556 /* Menu.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC4620C39E140012E556 /* Menu.cpp */; };
+		B392AC8720C39E190012E556 /* Bebas.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4720C39E150012E556 /* Bebas.ttf */; };
+		B392AC8820C39E190012E556 /* note.txt in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4820C39E150012E556 /* note.txt */; };
+		B392AC8920C39E190012E556 /* bin in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4A20C39E150012E556 /* bin */; };
+		B392AC8A20C39E190012E556 /* Tower in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4B20C39E150012E556 /* Tower */; };
+		B392AC8B20C39E190012E556 /* Slider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC4D20C39E150012E556 /* Slider.cpp */; };
+		B392AC8C20C39E190012E556 /* LEVEL3.txt in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4E20C39E150012E556 /* LEVEL3.txt */; };
+		B392AC8D20C39E190012E556 /* LEVEL4.txt in Resources */ = {isa = PBXBuildFile; fileRef = B392AC4F20C39E150012E556 /* LEVEL4.txt */; };
+		B392AC8E20C39E190012E556 /* BlackDragon in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5220C39E160012E556 /* BlackDragon */; };
+		B392AC8F20C39E190012E556 /* BackgroundMusic.ogg in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5320C39E160012E556 /* BackgroundMusic.ogg */; };
+		B392AC9020C39E190012E556 /* Material in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5420C39E160012E556 /* Material */; };
+		B392AC9120C39E190012E556 /* obj in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5620C39E160012E556 /* obj */; };
+		B392AC9220C39E190012E556 /* Level.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC5720C39E160012E556 /* Level.cpp */; };
+		B392AC9320C39E190012E556 /* DemonNijia in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5820C39E160012E556 /* DemonNijia */; };
+		B392AC9420C39E190012E556 /* level_fail.wav in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5920C39E160012E556 /* level_fail.wav */; };
+		B392AC9520C39E1A0012E556 /* Wolf in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5A20C39E160012E556 /* Wolf */; };
+		B392AC9620C39E1A0012E556 /* map_small.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5B20C39E170012E556 /* map_small.jpg */; };
+		B392AC9720C39E1A0012E556 /* doxygen in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5C20C39E170012E556 /* doxygen */; };
+		B392AC9820C39E1A0012E556 /* allegro-5.0.10-monolith-mt.dll in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5D20C39E170012E556 /* allegro-5.0.10-monolith-mt.dll */; };
+		B392AC9920C39E1A0012E556 /* global.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC5E20C39E170012E556 /* global.cpp */; };
+		B392AC9A20C39E1A0012E556 /* StartBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B392AC5F20C39E170012E556 /* StartBackground.jpg */; };
+		B392AC9B20C39E1A0012E556 /* Arrow.wav in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6120C39E170012E556 /* Arrow.wav */; };
+		B392AC9C20C39E1A0012E556 /* CaveMan in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6220C39E170012E556 /* CaveMan */; };
+		B392AC9D20C39E1A0012E556 /* Caviar_Dreams_Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6520C39E180012E556 /* Caviar_Dreams_Bold.ttf */; };
+		B392AC9E20C39E1A0012E556 /* TowerGame.cscope_file_list in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6620C39E180012E556 /* TowerGame.cscope_file_list */; };
+		B392AC9F20C39E1A0012E556 /* GameWindow.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC6720C39E180012E556 /* GameWindow.cpp */; };
+		B392ACA020C39E1A0012E556 /* SettingScene in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6820C39E180012E556 /* SettingScene */; };
+		B392ACA120C39E1A0012E556 /* Tower.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC6920C39E180012E556 /* Tower.cpp */; };
+		B392ACA220C39E1A0012E556 /* Thumbs.db in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6B20C39E180012E556 /* Thumbs.db */; };
+		B392ACA320C39E1A0012E556 /* growl.wav in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6C20C39E180012E556 /* growl.wav */; };
+		B392ACA420C39E1A0012E556 /* TowerGame.layout in Resources */ = {isa = PBXBuildFile; fileRef = B392AC6F20C39E180012E556 /* TowerGame.layout */; };
+		B392ACA520C39E1A0012E556 /* allegro.log in Resources */ = {isa = PBXBuildFile; fileRef = B392AC7020C39E190012E556 /* allegro.log */; };
+		B392ACA620C39E1A0012E556 /* TowerGame.cbp in Resources */ = {isa = PBXBuildFile; fileRef = B392AC7220C39E190012E556 /* TowerGame.cbp */; };
+		B392ACA720C39E1A0012E556 /* StartScene in Resources */ = {isa = PBXBuildFile; fileRef = B392AC7320C39E190012E556 /* StartScene */; };
+		B392ACA820C39E1A0012E556 /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = B392AC7520C39E190012E556 /* icon.png */; };
+		B392ACA920C39E1A0012E556 /* Main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B392AC7620C39E190012E556 /* Main.cpp */; };
+		B392ACAA20C39E1A0012E556 /* Claw in Resources */ = {isa = PBXBuildFile; fileRef = B392AC7720C39E190012E556 /* Claw */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B392AC1720C39D610012E556 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B392AC2520C39D750012E556 /* liballegro_main.5.2.3.dylib in CopyFiles */,
+				B392AC2620C39D750012E556 /* liballegro_memfile.5.2.3.dylib in CopyFiles */,
+				B392AC2720C39D750012E556 /* liballegro_video.5.2.3.dylib in CopyFiles */,
+				B392AC2820C39D750012E556 /* liballegro_image.5.2.3.dylib in CopyFiles */,
+				B392AC2920C39D750012E556 /* liballegro_font.5.2.3.dylib in CopyFiles */,
+				B392AC2A20C39D750012E556 /* liballegro_ttf.5.2.3.dylib in CopyFiles */,
+				B392AC2B20C39D750012E556 /* liballegro_color.5.2.3.dylib in CopyFiles */,
+				B392AC2C20C39D750012E556 /* liballegro_audio.5.2.3.dylib in CopyFiles */,
+				B392AC2D20C39D750012E556 /* liballegro_physfs.5.2.3.dylib in CopyFiles */,
+				B392AC2E20C39D750012E556 /* liballegro_acodec.5.2.3.dylib in CopyFiles */,
+				B392AC2F20C39D750012E556 /* liballegro_dialog.5.2.3.dylib in CopyFiles */,
+				B392AC3020C39D750012E556 /* liballegro_primitives.5.2.3.dylib in CopyFiles */,
+				B392AC3120C39D750012E556 /* liballegro.5.2.3.dylib in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		B392ABE820C39BD50012E556 /* mini_project_2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = mini_project_2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B392ABEE20C39BD50012E556 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B392ABF120C39BD60012E556 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		B392ABF320C39BD60012E556 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B392ABF620C39BD60012E556 /* mini_project_2.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = mini_project_2.entitlements; sourceTree = "<group>"; };
+		B392ABFD20C39D4F0012E556 /* liballegro_main.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_main.5.2.3.dylib; sourceTree = "<group>"; };
+		B392ABFE20C39D4F0012E556 /* liballegro_memfile.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_memfile.5.2.3.dylib; sourceTree = "<group>"; };
+		B392ABFF20C39D4F0012E556 /* liballegro_video.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_video.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0020C39D4F0012E556 /* liballegro_image.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_image.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0120C39D500012E556 /* liballegro_font.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_font.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0220C39D500012E556 /* liballegro_ttf.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_ttf.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0320C39D500012E556 /* liballegro_color.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_color.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0420C39D500012E556 /* liballegro_audio.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_audio.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0520C39D500012E556 /* liballegro_physfs.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_physfs.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0620C39D500012E556 /* liballegro_acodec.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_acodec.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0720C39D500012E556 /* liballegro_dialog.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_dialog.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0820C39D500012E556 /* liballegro_primitives.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_primitives.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC0920C39D500012E556 /* liballegro.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1820C39D730012E556 /* liballegro_main.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_main.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_main.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1920C39D730012E556 /* liballegro_memfile.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_memfile.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_memfile.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1A20C39D730012E556 /* liballegro_video.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_video.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_video.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1B20C39D740012E556 /* liballegro_image.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_image.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_image.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1C20C39D740012E556 /* liballegro_font.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_font.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_font.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1D20C39D740012E556 /* liballegro_ttf.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_ttf.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_ttf.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1E20C39D740012E556 /* liballegro_color.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_color.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_color.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC1F20C39D740012E556 /* liballegro_audio.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_audio.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_audio.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC2020C39D740012E556 /* liballegro_physfs.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_physfs.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_physfs.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC2120C39D740012E556 /* liballegro_acodec.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_acodec.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_acodec.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC2220C39D740012E556 /* liballegro_dialog.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_dialog.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_dialog.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC2320C39D740012E556 /* liballegro_primitives.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro_primitives.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro_primitives.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC2420C39D750012E556 /* liballegro.5.2.3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = liballegro.5.2.3.dylib; path = ../../../../../usr/local/Cellar/allegro/5.2.3.0/lib/liballegro.5.2.3.dylib; sourceTree = "<group>"; };
+		B392AC3220C39E120012E556 /* Circle.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Circle.cpp; path = CSI2PIIChen/Mini2/TowerGame/Circle.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC3320C39E120012E556 /* LEVEL1.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LEVEL1.txt; path = CSI2PIIChen/Mini2/TowerGame/LEVEL1.txt; sourceTree = SOURCE_ROOT; };
+		B392AC3420C39E120012E556 /* Monster.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Monster.cpp; path = CSI2PIIChen/Mini2/TowerGame/Monster.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC3520C39E130012E556 /* SelectScene */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SelectScene; path = CSI2PIIChen/Mini2/TowerGame/SelectScene; sourceTree = SOURCE_ROOT; };
+		B392AC3620C39E130012E556 /* TowerGame.depend */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TowerGame.depend; path = CSI2PIIChen/Mini2/TowerGame/TowerGame.depend; sourceTree = SOURCE_ROOT; };
+		B392AC3720C39E130012E556 /* Dancing.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Dancing.otf; path = CSI2PIIChen/Mini2/TowerGame/Dancing.otf; sourceTree = SOURCE_ROOT; };
+		B392AC3820C39E130012E556 /* map.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = map.jpg; path = CSI2PIIChen/Mini2/TowerGame/map.jpg; sourceTree = SOURCE_ROOT; };
+		B392AC3920C39E130012E556 /* WolfKnight */ = {isa = PBXFileReference; lastKnownFileType = folder; name = WolfKnight; path = CSI2PIIChen/Mini2/TowerGame/WolfKnight; sourceTree = SOURCE_ROOT; };
+		B392AC3A20C39E130012E556 /* CaveMan.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CaveMan.h; path = CSI2PIIChen/Mini2/TowerGame/CaveMan.h; sourceTree = SOURCE_ROOT; };
+		B392AC3B20C39E130012E556 /* RedDragon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = RedDragon; path = CSI2PIIChen/Mini2/TowerGame/RedDragon; sourceTree = SOURCE_ROOT; };
+		B392AC3C20C39E130012E556 /* LEVEL2.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LEVEL2.txt; path = CSI2PIIChen/Mini2/TowerGame/LEVEL2.txt; sourceTree = SOURCE_ROOT; };
+		B392AC3D20C39E130012E556 /* Object.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Object.h; path = CSI2PIIChen/Mini2/TowerGame/Object.h; sourceTree = SOURCE_ROOT; };
+		B392AC3E20C39E140012E556 /* Eagle */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Eagle; path = CSI2PIIChen/Mini2/TowerGame/Eagle; sourceTree = SOURCE_ROOT; };
+		B392AC3F20C39E140012E556 /* Menu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Menu.h; path = CSI2PIIChen/Mini2/TowerGame/Menu.h; sourceTree = SOURCE_ROOT; };
+		B392AC4020C39E140012E556 /* pirulen.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = pirulen.ttf; path = CSI2PIIChen/Mini2/TowerGame/pirulen.ttf; sourceTree = SOURCE_ROOT; };
+		B392AC4120C39E140012E556 /* Tower.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Tower.h; path = CSI2PIIChen/Mini2/TowerGame/Tower.h; sourceTree = SOURCE_ROOT; };
+		B392AC4220C39E140012E556 /* Attack.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Attack.cpp; path = CSI2PIIChen/Mini2/TowerGame/Attack.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC4320C39E140012E556 /* Arcane.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Arcane.h; path = CSI2PIIChen/Mini2/TowerGame/Arcane.h; sourceTree = SOURCE_ROOT; };
+		B392AC4420C39E140012E556 /* DemonNijia.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = DemonNijia.h; path = CSI2PIIChen/Mini2/TowerGame/DemonNijia.h; sourceTree = SOURCE_ROOT; };
+		B392AC4520C39E140012E556 /* level_clear.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = level_clear.wav; path = CSI2PIIChen/Mini2/TowerGame/level_clear.wav; sourceTree = SOURCE_ROOT; };
+		B392AC4620C39E140012E556 /* Menu.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Menu.cpp; path = CSI2PIIChen/Mini2/TowerGame/Menu.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC4720C39E150012E556 /* Bebas.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Bebas.ttf; path = CSI2PIIChen/Mini2/TowerGame/Bebas.ttf; sourceTree = SOURCE_ROOT; };
+		B392AC4820C39E150012E556 /* note.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = note.txt; path = CSI2PIIChen/Mini2/TowerGame/note.txt; sourceTree = SOURCE_ROOT; };
+		B392AC4920C39E150012E556 /* Poison.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Poison.h; path = CSI2PIIChen/Mini2/TowerGame/Poison.h; sourceTree = SOURCE_ROOT; };
+		B392AC4A20C39E150012E556 /* bin */ = {isa = PBXFileReference; lastKnownFileType = folder; name = bin; path = CSI2PIIChen/Mini2/TowerGame/bin; sourceTree = SOURCE_ROOT; };
+		B392AC4B20C39E150012E556 /* Tower */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Tower; path = CSI2PIIChen/Mini2/TowerGame/Tower; sourceTree = SOURCE_ROOT; };
+		B392AC4C20C39E150012E556 /* global.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = global.h; path = CSI2PIIChen/Mini2/TowerGame/global.h; sourceTree = SOURCE_ROOT; };
+		B392AC4D20C39E150012E556 /* Slider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Slider.cpp; path = CSI2PIIChen/Mini2/TowerGame/Slider.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC4E20C39E150012E556 /* LEVEL3.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LEVEL3.txt; path = CSI2PIIChen/Mini2/TowerGame/LEVEL3.txt; sourceTree = SOURCE_ROOT; };
+		B392AC4F20C39E150012E556 /* LEVEL4.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = LEVEL4.txt; path = CSI2PIIChen/Mini2/TowerGame/LEVEL4.txt; sourceTree = SOURCE_ROOT; };
+		B392AC5020C39E160012E556 /* Monster.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Monster.h; path = CSI2PIIChen/Mini2/TowerGame/Monster.h; sourceTree = SOURCE_ROOT; };
+		B392AC5120C39E160012E556 /* Wolf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Wolf.h; path = CSI2PIIChen/Mini2/TowerGame/Wolf.h; sourceTree = SOURCE_ROOT; };
+		B392AC5220C39E160012E556 /* BlackDragon */ = {isa = PBXFileReference; lastKnownFileType = folder; name = BlackDragon; path = CSI2PIIChen/Mini2/TowerGame/BlackDragon; sourceTree = SOURCE_ROOT; };
+		B392AC5320C39E160012E556 /* BackgroundMusic.ogg */ = {isa = PBXFileReference; lastKnownFileType = file; name = BackgroundMusic.ogg; path = CSI2PIIChen/Mini2/TowerGame/BackgroundMusic.ogg; sourceTree = SOURCE_ROOT; };
+		B392AC5420C39E160012E556 /* Material */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Material; path = CSI2PIIChen/Mini2/TowerGame/Material; sourceTree = SOURCE_ROOT; };
+		B392AC5520C39E160012E556 /* GameWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameWindow.h; path = CSI2PIIChen/Mini2/TowerGame/GameWindow.h; sourceTree = SOURCE_ROOT; };
+		B392AC5620C39E160012E556 /* obj */ = {isa = PBXFileReference; lastKnownFileType = folder; name = obj; path = CSI2PIIChen/Mini2/TowerGame/obj; sourceTree = SOURCE_ROOT; };
+		B392AC5720C39E160012E556 /* Level.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Level.cpp; path = CSI2PIIChen/Mini2/TowerGame/Level.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC5820C39E160012E556 /* DemonNijia */ = {isa = PBXFileReference; lastKnownFileType = folder; name = DemonNijia; path = CSI2PIIChen/Mini2/TowerGame/DemonNijia; sourceTree = SOURCE_ROOT; };
+		B392AC5920C39E160012E556 /* level_fail.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = level_fail.wav; path = CSI2PIIChen/Mini2/TowerGame/level_fail.wav; sourceTree = SOURCE_ROOT; };
+		B392AC5A20C39E160012E556 /* Wolf */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Wolf; path = CSI2PIIChen/Mini2/TowerGame/Wolf; sourceTree = SOURCE_ROOT; };
+		B392AC5B20C39E170012E556 /* map_small.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = map_small.jpg; path = CSI2PIIChen/Mini2/TowerGame/map_small.jpg; sourceTree = SOURCE_ROOT; };
+		B392AC5C20C39E170012E556 /* doxygen */ = {isa = PBXFileReference; lastKnownFileType = folder; name = doxygen; path = CSI2PIIChen/Mini2/TowerGame/doxygen; sourceTree = SOURCE_ROOT; };
+		B392AC5D20C39E170012E556 /* allegro-5.0.10-monolith-mt.dll */ = {isa = PBXFileReference; lastKnownFileType = file; name = "allegro-5.0.10-monolith-mt.dll"; path = "CSI2PIIChen/Mini2/TowerGame/allegro-5.0.10-monolith-mt.dll"; sourceTree = SOURCE_ROOT; };
+		B392AC5E20C39E170012E556 /* global.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = global.cpp; path = CSI2PIIChen/Mini2/TowerGame/global.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC5F20C39E170012E556 /* StartBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = StartBackground.jpg; path = CSI2PIIChen/Mini2/TowerGame/StartBackground.jpg; sourceTree = SOURCE_ROOT; };
+		B392AC6020C39E170012E556 /* Attack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Attack.h; path = CSI2PIIChen/Mini2/TowerGame/Attack.h; sourceTree = SOURCE_ROOT; };
+		B392AC6120C39E170012E556 /* Arrow.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = Arrow.wav; path = CSI2PIIChen/Mini2/TowerGame/Arrow.wav; sourceTree = SOURCE_ROOT; };
+		B392AC6220C39E170012E556 /* CaveMan */ = {isa = PBXFileReference; lastKnownFileType = folder; name = CaveMan; path = CSI2PIIChen/Mini2/TowerGame/CaveMan; sourceTree = SOURCE_ROOT; };
+		B392AC6320C39E170012E556 /* Canon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Canon.h; path = CSI2PIIChen/Mini2/TowerGame/Canon.h; sourceTree = SOURCE_ROOT; };
+		B392AC6420C39E170012E556 /* Level.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Level.h; path = CSI2PIIChen/Mini2/TowerGame/Level.h; sourceTree = SOURCE_ROOT; };
+		B392AC6520C39E180012E556 /* Caviar_Dreams_Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = Caviar_Dreams_Bold.ttf; path = CSI2PIIChen/Mini2/TowerGame/Caviar_Dreams_Bold.ttf; sourceTree = SOURCE_ROOT; };
+		B392AC6620C39E180012E556 /* TowerGame.cscope_file_list */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = TowerGame.cscope_file_list; path = CSI2PIIChen/Mini2/TowerGame/TowerGame.cscope_file_list; sourceTree = SOURCE_ROOT; };
+		B392AC6720C39E180012E556 /* GameWindow.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameWindow.cpp; path = CSI2PIIChen/Mini2/TowerGame/GameWindow.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC6820C39E180012E556 /* SettingScene */ = {isa = PBXFileReference; lastKnownFileType = folder; name = SettingScene; path = CSI2PIIChen/Mini2/TowerGame/SettingScene; sourceTree = SOURCE_ROOT; };
+		B392AC6920C39E180012E556 /* Tower.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Tower.cpp; path = CSI2PIIChen/Mini2/TowerGame/Tower.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC6A20C39E180012E556 /* WolfKnight.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = WolfKnight.h; path = CSI2PIIChen/Mini2/TowerGame/WolfKnight.h; sourceTree = SOURCE_ROOT; };
+		B392AC6B20C39E180012E556 /* Thumbs.db */ = {isa = PBXFileReference; lastKnownFileType = file; name = Thumbs.db; path = CSI2PIIChen/Mini2/TowerGame/Thumbs.db; sourceTree = SOURCE_ROOT; };
+		B392AC6C20C39E180012E556 /* growl.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = growl.wav; path = CSI2PIIChen/Mini2/TowerGame/growl.wav; sourceTree = SOURCE_ROOT; };
+		B392AC6D20C39E180012E556 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Circle.h; path = CSI2PIIChen/Mini2/TowerGame/Circle.h; sourceTree = SOURCE_ROOT; };
+		B392AC6E20C39E180012E556 /* Storm.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Storm.h; path = CSI2PIIChen/Mini2/TowerGame/Storm.h; sourceTree = SOURCE_ROOT; };
+		B392AC6F20C39E180012E556 /* TowerGame.layout */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TowerGame.layout; path = CSI2PIIChen/Mini2/TowerGame/TowerGame.layout; sourceTree = SOURCE_ROOT; };
+		B392AC7020C39E190012E556 /* allegro.log */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = allegro.log; path = CSI2PIIChen/Mini2/TowerGame/allegro.log; sourceTree = SOURCE_ROOT; };
+		B392AC7120C39E190012E556 /* Slider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Slider.h; path = CSI2PIIChen/Mini2/TowerGame/Slider.h; sourceTree = SOURCE_ROOT; };
+		B392AC7220C39E190012E556 /* TowerGame.cbp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = TowerGame.cbp; path = CSI2PIIChen/Mini2/TowerGame/TowerGame.cbp; sourceTree = SOURCE_ROOT; };
+		B392AC7320C39E190012E556 /* StartScene */ = {isa = PBXFileReference; lastKnownFileType = folder; name = StartScene; path = CSI2PIIChen/Mini2/TowerGame/StartScene; sourceTree = SOURCE_ROOT; };
+		B392AC7420C39E190012E556 /* Archer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Archer.h; path = CSI2PIIChen/Mini2/TowerGame/Archer.h; sourceTree = SOURCE_ROOT; };
+		B392AC7520C39E190012E556 /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = icon.png; path = CSI2PIIChen/Mini2/TowerGame/icon.png; sourceTree = SOURCE_ROOT; };
+		B392AC7620C39E190012E556 /* Main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Main.cpp; path = CSI2PIIChen/Mini2/TowerGame/Main.cpp; sourceTree = SOURCE_ROOT; };
+		B392AC7720C39E190012E556 /* Claw */ = {isa = PBXFileReference; lastKnownFileType = folder; name = Claw; path = CSI2PIIChen/Mini2/TowerGame/Claw; sourceTree = SOURCE_ROOT; };
+		B3C8FA8B20C6706F002EFC18 /* MyTower.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = MyTower.h; path = CSI2PIIChen/Mini2/TowerGame/MyTower.h; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B392ABE520C39BD50012E556 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B392AC0A20C39D500012E556 /* liballegro_main.5.2.3.dylib in Frameworks */,
+				B392AC0B20C39D500012E556 /* liballegro_memfile.5.2.3.dylib in Frameworks */,
+				B392AC0C20C39D500012E556 /* liballegro_video.5.2.3.dylib in Frameworks */,
+				B392AC0D20C39D500012E556 /* liballegro_image.5.2.3.dylib in Frameworks */,
+				B392AC0E20C39D500012E556 /* liballegro_font.5.2.3.dylib in Frameworks */,
+				B392AC0F20C39D500012E556 /* liballegro_ttf.5.2.3.dylib in Frameworks */,
+				B392AC1020C39D500012E556 /* liballegro_color.5.2.3.dylib in Frameworks */,
+				B392AC1120C39D500012E556 /* liballegro_audio.5.2.3.dylib in Frameworks */,
+				B392AC1220C39D500012E556 /* liballegro_physfs.5.2.3.dylib in Frameworks */,
+				B392AC1320C39D500012E556 /* liballegro_acodec.5.2.3.dylib in Frameworks */,
+				B392AC1420C39D500012E556 /* liballegro_dialog.5.2.3.dylib in Frameworks */,
+				B392AC1520C39D500012E556 /* liballegro_primitives.5.2.3.dylib in Frameworks */,
+				B392AC1620C39D500012E556 /* liballegro.5.2.3.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B392ABDF20C39BD50012E556 = {
+			isa = PBXGroup;
+			children = (
+				B392AC2120C39D740012E556 /* liballegro_acodec.5.2.3.dylib */,
+				B392AC1F20C39D740012E556 /* liballegro_audio.5.2.3.dylib */,
+				B392AC1E20C39D740012E556 /* liballegro_color.5.2.3.dylib */,
+				B392AC2220C39D740012E556 /* liballegro_dialog.5.2.3.dylib */,
+				B392AC1C20C39D740012E556 /* liballegro_font.5.2.3.dylib */,
+				B392AC1B20C39D740012E556 /* liballegro_image.5.2.3.dylib */,
+				B392AC1820C39D730012E556 /* liballegro_main.5.2.3.dylib */,
+				B392AC1920C39D730012E556 /* liballegro_memfile.5.2.3.dylib */,
+				B392AC2020C39D740012E556 /* liballegro_physfs.5.2.3.dylib */,
+				B392AC2320C39D740012E556 /* liballegro_primitives.5.2.3.dylib */,
+				B392AC1D20C39D740012E556 /* liballegro_ttf.5.2.3.dylib */,
+				B392AC1A20C39D730012E556 /* liballegro_video.5.2.3.dylib */,
+				B392AC2420C39D750012E556 /* liballegro.5.2.3.dylib */,
+				B392ABEA20C39BD50012E556 /* mini_project_2 */,
+				B392ABE920C39BD50012E556 /* Products */,
+				B392ABFC20C39D4F0012E556 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B392ABE920C39BD50012E556 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B392ABE820C39BD50012E556 /* mini_project_2.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B392ABEA20C39BD50012E556 /* mini_project_2 */ = {
+			isa = PBXGroup;
+			children = (
+				B392AC5D20C39E170012E556 /* allegro-5.0.10-monolith-mt.dll */,
+				B392AC7020C39E190012E556 /* allegro.log */,
+				B392AC4320C39E140012E556 /* Arcane.h */,
+				B392AC7420C39E190012E556 /* Archer.h */,
+				B392AC6120C39E170012E556 /* Arrow.wav */,
+				B392AC4220C39E140012E556 /* Attack.cpp */,
+				B3C8FA8B20C6706F002EFC18 /* MyTower.h */,
+				B392AC6020C39E170012E556 /* Attack.h */,
+				B392AC5320C39E160012E556 /* BackgroundMusic.ogg */,
+				B392AC4720C39E150012E556 /* Bebas.ttf */,
+				B392AC4A20C39E150012E556 /* bin */,
+				B392AC5220C39E160012E556 /* BlackDragon */,
+				B392AC6320C39E170012E556 /* Canon.h */,
+				B392AC6220C39E170012E556 /* CaveMan */,
+				B392AC3A20C39E130012E556 /* CaveMan.h */,
+				B392AC6520C39E180012E556 /* Caviar_Dreams_Bold.ttf */,
+				B392AC3220C39E120012E556 /* Circle.cpp */,
+				B392AC6D20C39E180012E556 /* Circle.h */,
+				B392AC7720C39E190012E556 /* Claw */,
+				B392AC3720C39E130012E556 /* Dancing.otf */,
+				B392AC5820C39E160012E556 /* DemonNijia */,
+				B392AC4420C39E140012E556 /* DemonNijia.h */,
+				B392AC5C20C39E170012E556 /* doxygen */,
+				B392AC3E20C39E140012E556 /* Eagle */,
+				B392AC6720C39E180012E556 /* GameWindow.cpp */,
+				B392AC5520C39E160012E556 /* GameWindow.h */,
+				B392AC5E20C39E170012E556 /* global.cpp */,
+				B392AC4C20C39E150012E556 /* global.h */,
+				B392AC6C20C39E180012E556 /* growl.wav */,
+				B392AC7520C39E190012E556 /* icon.png */,
+				B392AC4520C39E140012E556 /* level_clear.wav */,
+				B392AC5920C39E160012E556 /* level_fail.wav */,
+				B392AC5720C39E160012E556 /* Level.cpp */,
+				B392AC6420C39E170012E556 /* Level.h */,
+				B392AC3320C39E120012E556 /* LEVEL1.txt */,
+				B392AC3C20C39E130012E556 /* LEVEL2.txt */,
+				B392AC4E20C39E150012E556 /* LEVEL3.txt */,
+				B392AC4F20C39E150012E556 /* LEVEL4.txt */,
+				B392AC7620C39E190012E556 /* Main.cpp */,
+				B392AC5B20C39E170012E556 /* map_small.jpg */,
+				B392AC3820C39E130012E556 /* map.jpg */,
+				B392AC5420C39E160012E556 /* Material */,
+				B392AC4620C39E140012E556 /* Menu.cpp */,
+				B392AC3F20C39E140012E556 /* Menu.h */,
+				B392AC3420C39E120012E556 /* Monster.cpp */,
+				B392AC5020C39E160012E556 /* Monster.h */,
+				B392AC4820C39E150012E556 /* note.txt */,
+				B392AC5620C39E160012E556 /* obj */,
+				B392AC3D20C39E130012E556 /* Object.h */,
+				B392AC4020C39E140012E556 /* pirulen.ttf */,
+				B392AC4920C39E150012E556 /* Poison.h */,
+				B392AC3B20C39E130012E556 /* RedDragon */,
+				B392AC3520C39E130012E556 /* SelectScene */,
+				B392AC6820C39E180012E556 /* SettingScene */,
+				B392AC4D20C39E150012E556 /* Slider.cpp */,
+				B392AC7120C39E190012E556 /* Slider.h */,
+				B392AC5F20C39E170012E556 /* StartBackground.jpg */,
+				B392AC7320C39E190012E556 /* StartScene */,
+				B392AC6E20C39E180012E556 /* Storm.h */,
+				B392AC6B20C39E180012E556 /* Thumbs.db */,
+				B392AC4B20C39E150012E556 /* Tower */,
+				B392AC6920C39E180012E556 /* Tower.cpp */,
+				B392AC4120C39E140012E556 /* Tower.h */,
+				B392AC7220C39E190012E556 /* TowerGame.cbp */,
+				B392AC6620C39E180012E556 /* TowerGame.cscope_file_list */,
+				B392AC3620C39E130012E556 /* TowerGame.depend */,
+				B392AC6F20C39E180012E556 /* TowerGame.layout */,
+				B392AC5A20C39E160012E556 /* Wolf */,
+				B392AC5120C39E160012E556 /* Wolf.h */,
+				B392AC3920C39E130012E556 /* WolfKnight */,
+				B392AC6A20C39E180012E556 /* WolfKnight.h */,
+				B392ABEE20C39BD50012E556 /* Assets.xcassets */,
+				B392ABF020C39BD60012E556 /* MainMenu.xib */,
+				B392ABF320C39BD60012E556 /* Info.plist */,
+				B392ABF620C39BD60012E556 /* mini_project_2.entitlements */,
+			);
+			path = mini_project_2;
+			sourceTree = "<group>";
+		};
+		B392ABFC20C39D4F0012E556 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B392AC0620C39D500012E556 /* liballegro_acodec.5.2.3.dylib */,
+				B392AC0420C39D500012E556 /* liballegro_audio.5.2.3.dylib */,
+				B392AC0320C39D500012E556 /* liballegro_color.5.2.3.dylib */,
+				B392AC0720C39D500012E556 /* liballegro_dialog.5.2.3.dylib */,
+				B392AC0120C39D500012E556 /* liballegro_font.5.2.3.dylib */,
+				B392AC0020C39D4F0012E556 /* liballegro_image.5.2.3.dylib */,
+				B392ABFD20C39D4F0012E556 /* liballegro_main.5.2.3.dylib */,
+				B392ABFE20C39D4F0012E556 /* liballegro_memfile.5.2.3.dylib */,
+				B392AC0520C39D500012E556 /* liballegro_physfs.5.2.3.dylib */,
+				B392AC0820C39D500012E556 /* liballegro_primitives.5.2.3.dylib */,
+				B392AC0220C39D500012E556 /* liballegro_ttf.5.2.3.dylib */,
+				B392ABFF20C39D4F0012E556 /* liballegro_video.5.2.3.dylib */,
+				B392AC0920C39D500012E556 /* liballegro.5.2.3.dylib */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B392ABE720C39BD50012E556 /* mini_project_2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B392ABF920C39BD60012E556 /* Build configuration list for PBXNativeTarget "mini_project_2" */;
+			buildPhases = (
+				B392ABE420C39BD50012E556 /* Sources */,
+				B392ABE520C39BD50012E556 /* Frameworks */,
+				B392ABE620C39BD50012E556 /* Resources */,
+				B392AC1720C39D610012E556 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = mini_project_2;
+			productName = mini_project_2;
+			productReference = B392ABE820C39BD50012E556 /* mini_project_2.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B392ABE020C39BD50012E556 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Kimbo Chen";
+				TargetAttributes = {
+					B392ABE720C39BD50012E556 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = B392ABE320C39BD50012E556 /* Build configuration list for PBXProject "mini_project_2" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B392ABDF20C39BD50012E556;
+			productRefGroup = B392ABE920C39BD50012E556 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B392ABE720C39BD50012E556 /* mini_project_2 */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B392ABE620C39BD50012E556 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B392AC9D20C39E1A0012E556 /* Caviar_Dreams_Bold.ttf in Resources */,
+				B392AC9A20C39E1A0012E556 /* StartBackground.jpg in Resources */,
+				B392AC8220C39E190012E556 /* Eagle in Resources */,
+				B392AC9C20C39E1A0012E556 /* CaveMan in Resources */,
+				B392AC7C20C39E190012E556 /* TowerGame.depend in Resources */,
+				B392ABEF20C39BD50012E556 /* Assets.xcassets in Resources */,
+				B392AC7D20C39E190012E556 /* Dancing.otf in Resources */,
+				B392AC8820C39E190012E556 /* note.txt in Resources */,
+				B392ACAA20C39E1A0012E556 /* Claw in Resources */,
+				B392ACA820C39E1A0012E556 /* icon.png in Resources */,
+				B392AC9720C39E1A0012E556 /* doxygen in Resources */,
+				B392ACA420C39E1A0012E556 /* TowerGame.layout in Resources */,
+				B392AC8A20C39E190012E556 /* Tower in Resources */,
+				B392AC7B20C39E190012E556 /* SelectScene in Resources */,
+				B392AC8120C39E190012E556 /* LEVEL2.txt in Resources */,
+				B392AC9320C39E190012E556 /* DemonNijia in Resources */,
+				B392AC7E20C39E190012E556 /* map.jpg in Resources */,
+				B392ABF220C39BD60012E556 /* MainMenu.xib in Resources */,
+				B392AC9820C39E1A0012E556 /* allegro-5.0.10-monolith-mt.dll in Resources */,
+				B392AC7920C39E190012E556 /* LEVEL1.txt in Resources */,
+				B392AC9520C39E1A0012E556 /* Wolf in Resources */,
+				B392ACA620C39E1A0012E556 /* TowerGame.cbp in Resources */,
+				B392AC9B20C39E1A0012E556 /* Arrow.wav in Resources */,
+				B392AC9020C39E190012E556 /* Material in Resources */,
+				B392ACA720C39E1A0012E556 /* StartScene in Resources */,
+				B392AC8D20C39E190012E556 /* LEVEL4.txt in Resources */,
+				B392ACA020C39E1A0012E556 /* SettingScene in Resources */,
+				B392AC9620C39E1A0012E556 /* map_small.jpg in Resources */,
+				B392AC7F20C39E190012E556 /* WolfKnight in Resources */,
+				B392ACA220C39E1A0012E556 /* Thumbs.db in Resources */,
+				B392AC8520C39E190012E556 /* level_clear.wav in Resources */,
+				B392AC8920C39E190012E556 /* bin in Resources */,
+				B392AC8320C39E190012E556 /* pirulen.ttf in Resources */,
+				B392AC9420C39E190012E556 /* level_fail.wav in Resources */,
+				B392ACA320C39E1A0012E556 /* growl.wav in Resources */,
+				B392AC8C20C39E190012E556 /* LEVEL3.txt in Resources */,
+				B392ACA520C39E1A0012E556 /* allegro.log in Resources */,
+				B392AC9E20C39E1A0012E556 /* TowerGame.cscope_file_list in Resources */,
+				B392AC8720C39E190012E556 /* Bebas.ttf in Resources */,
+				B392AC8F20C39E190012E556 /* BackgroundMusic.ogg in Resources */,
+				B392AC8020C39E190012E556 /* RedDragon in Resources */,
+				B392AC8E20C39E190012E556 /* BlackDragon in Resources */,
+				B392AC9120C39E190012E556 /* obj in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B392ABE420C39BD50012E556 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B392AC9220C39E190012E556 /* Level.cpp in Sources */,
+				B392AC9F20C39E1A0012E556 /* GameWindow.cpp in Sources */,
+				B392AC7A20C39E190012E556 /* Monster.cpp in Sources */,
+				B392AC7820C39E190012E556 /* Circle.cpp in Sources */,
+				B392ACA920C39E1A0012E556 /* Main.cpp in Sources */,
+				B392AC8620C39E190012E556 /* Menu.cpp in Sources */,
+				B392AC8B20C39E190012E556 /* Slider.cpp in Sources */,
+				B392ACA120C39E1A0012E556 /* Tower.cpp in Sources */,
+				B392AC9920C39E1A0012E556 /* global.cpp in Sources */,
+				B392AC8420C39E190012E556 /* Attack.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B392ABF020C39BD60012E556 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B392ABF120C39BD60012E556 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B392ABF720C39BD60012E556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		B392ABF820C39BD60012E556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		B392ABFA20C39BD60012E556 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = mini_project_2/mini_project_2.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = mini_project_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/**",
+					/usr/local/Cellar/allegro/5.2.3.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "K-Machina.mini-project-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Debug;
+		};
+		B392ABFB20C39BD60012E556 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = mini_project_2/mini_project_2.entitlements;
+				CODE_SIGN_STYLE = Manual;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = "";
+				HEADER_SEARCH_PATHS = /usr/local/include;
+				INFOPLIST_FILE = mini_project_2/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"/usr/local/lib/**",
+					/usr/local/Cellar/allegro/5.2.3.0/lib,
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "K-Machina.mini-project-2";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B392ABE320C39BD50012E556 /* Build configuration list for PBXProject "mini_project_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B392ABF720C39BD60012E556 /* Debug */,
+				B392ABF820C39BD60012E556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B392ABF920C39BD60012E556 /* Build configuration list for PBXNativeTarget "mini_project_2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B392ABFA20C39BD60012E556 /* Debug */,
+				B392ABFB20C39BD60012E556 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B392ABE020C39BD50012E556 /* Project object */;
+}
